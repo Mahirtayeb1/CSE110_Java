@@ -1,0 +1,12 @@
+// task 11
+public class task11{
+  public static void main (String[] args){
+   
+    float a = 4.5f;
+    float b = 9.5f;
+    float c = Math.sqrt((a*a) + (b*b));
+    //int s = ((n/2)*(a+L));
+    
+    System.out.println("Sum of 1st 100 positive numbers is " + c);
+  }
+}

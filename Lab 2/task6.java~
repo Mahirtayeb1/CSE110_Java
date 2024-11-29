@@ -1,0 +1,15 @@
+//task 6
+public class task6{
+  public static void main (String[] args){
+    // by creating third variable
+    int n = 12;
+    int m = 6;
+    int temp = n;
+    int n = m;
+    int m = temp;
+    
+    System.out.println(n);
+    System.out.println(m);
+       
+  }
+}

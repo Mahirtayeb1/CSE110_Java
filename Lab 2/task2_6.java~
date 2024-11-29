@@ -1,0 +1,12 @@
+//task 2.6
+public class task2_6{
+  public static void main (String[] args){
+    string n = 10.57;
+    string m = 4.32;
+    string result = (n + m);
+    System.out.println(n);
+    System.out.println(result);
+
+    
+  }
+}

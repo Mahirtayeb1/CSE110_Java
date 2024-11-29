@@ -1,0 +1,10 @@
+//task 2.2
+public class task2{
+  public static void main (String[] args){
+    int n = 10;
+    int m = 4;
+    int result = (n + m);
+    System.out.println(result);
+    
+  }
+}

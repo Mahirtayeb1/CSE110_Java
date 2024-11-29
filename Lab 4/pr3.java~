@@ -1,0 +1,10 @@
+import java.util.Scanner;  // printing digits left to r8 of an integer
+public class pr3{  
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    float m = sc.nextFloat();
+    float avgC = n/m;
+    System.out.print(avgC+" km/l");
+  }
+}

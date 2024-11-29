@@ -1,0 +1,13 @@
+// task 14
+public class task14{
+  public static void main (String[] args){
+    int a = 8;
+    int b = 3;
+    int c = Math.sqrt(((a/2)*(a/2)) + (b*b))
+   
+
+    System.out.println("Your velocity in km/h is " + c);
+    System.out.println("Your velocity in miles/h is " + m);
+    
+  }
+}

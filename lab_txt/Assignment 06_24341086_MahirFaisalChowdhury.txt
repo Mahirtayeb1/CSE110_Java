@@ -1,0 +1,241 @@
+// task 1
+import java.util.Scanner;
+import java.lang.String;
+public class task1{
+  public static void main(String []args){
+    Scanner sc = new Scanner(System.in);
+    String a = sc.nextLine();
+    //System.out.print(a);
+    for(int i=0; i<a.length(); i++){
+      //System.out.print(a.charAt(i));
+      if(a.codePointAt(i)> 96 && a.codePointAt(i)<123){
+        System.out.print((char)(a.codePointAt(i)-32));
+      }
+      else{
+        System.out.print((char)a.codePointAt(i));
+      }
+    }
+  }
+}
+
+//task2
+import java.util.Scanner;
+//import java.lang.String;
+public class task2{
+  public static void main(String []args){
+    Scanner sc = new Scanner(System.in);
+    String s1 = sc.nextLine();
+    String reverseString = "";
+    for(int i = s1.length()-1; i >= 0; i--){
+      reverseString = reverseString + s1.charAt(i);
+    }
+    System.out.println(reverseString.equals(s1));
+  }
+}
+
+//task3
+
+import java.util.Scanner;
+//import java.lang.String;
+public class task3{
+  public static void main(String []args){
+    Scanner sc = new Scanner(System.in);
+    String s1 = sc.nextLine();
+    String newString = "";
+    for(int i = 0; i < s1.length(); i++){
+      if(s1.charAt(i) == (char) 44 || s1.charAt(i) == (char) 45 ){
+        System.out.println(newString);
+        System.out.println(" ");
+        newString = "";
+      }
+      else{
+        newString = newString+s1.charAt(i);
+      }
+    }         // as else part has the last part after spliting and not printing that part so the last string always remains there. we need to print that manually
+    //System.out.println(newString);  
+    if(!newString.equals("")){
+      System.out.println(newString);
+    }
+  }
+}
+//task4
+import java.util.Scanner;
+//import java.lang.String;
+public class task4{
+  public static void main(String []args){
+    Scanner sc = new Scanner(System.in);
+    String s1 = sc.nextLine();
+    String reverseString = "";
+    for(int i = s1.length()-1; i >= 0; i--){
+      reverseString = reverseString + s1.charAt(i);
+    }
+    System.out.println(reverseString);
+  }
+}
+
+//task5
+import java.util.Scanner;
+//import java.lang.String;
+public class task5{
+  public static void main(String []args){
+    Scanner sc = new Scanner(System.in);
+    String s1 = sc.nextLine();
+    int vowelCount = 0;
+    int consCount = 0;
+    for(int i = 0; i < s1.length(); i++){
+      if((s1.charAt(i)>(char)64 && s1.charAt(i)<(char)91) || (s1.charAt(i)>(char)96 && s1.charAt(i)<(char)123)){
+        if(s1.charAt(i)==(char)65 || s1.charAt(i)==(char)69 || s1.charAt(i)==(char)73 || s1.charAt(i)==(char)79 || s1.charAt(i)==(char)85  || s1.charAt(i)==(char)97 || s1.charAt(i)==(char)101 || s1.charAt(i)==(char)105 || s1.charAt(i)==(char)111 || s1.charAt(i)==(char)117 ){
+            vowelCount ++;
+          }
+        }
+        else{
+          consCount ++;
+        }
+      }
+    System.out.println(vowelCount);
+    System.out.println(consCount);
+    if(vowelCount % 3 == 0 && consCount % 5 == 0){
+      System.out.println("Aaarr! Me Plunder!!");
+    }
+    else{
+      System.out.println("Blimey! No Plunder!!");
+    }
+  }
+ 
+}
+//task6
+import java.util.Scanner;
+//import java.lang.String;
+public class revStr{
+  public static void main(String []args){
+    Scanner sc = new Scanner(System.in);
+    String s1 = sc.nextLine();
+    String newS1 = "";
+    for(int i = s1.length()-1; i>=0; i--){
+      //System.out.print(s1.charAt(i));
+      newS1 = newS1 + s1.charAt(i);
+      if(s1.charAt(i) == (char)32){
+        for(int j = newS1.length()-1; j>=0; j--){
+          System.out.print(newS1.charAt(j));
+        }
+        newS1 = "";
+      }
+    }
+    System.out.print(" ");
+    for(int i = newS1.length()-1; i >= 0; i--){
+      System.out.print(newS1.charAt(i));
+    }
+ }
+ 
+}
+//task7
+import java.util.Scanner;
+//import java.lang.String;
+public class noDuplicate{
+  public static void main(String []args){            // abcd
+    Scanner sc = new Scanner(System.in);             // bdgc
+    String s1 = sc.nextLine();
+    String s2 = sc.nextLine();
+    //int notfnd = 0;
+    String uniq = "";
+    for(int i = 0; i<s1.length(); i++){
+      int notfound = 0;
+      for(int j = 0; j<s2.length(); j++){
+        if(s1.charAt(i)==s2.charAt(j)){
+          break;
+        }
+        else{
+          notfound ++;
+        }
+      }
+      if(notfound == s2.length()){
+        uniq = uniq + s1.charAt(i);
+        //notfound = 0;
+      }
+    }
+    //System.out.print(uniq);
+    for(int i = 0; i<s2.length(); i++){
+      int notfnd = 0;
+      for(int j = 0; j<s1.length(); j++){
+        if(s2.charAt(i)==s1.charAt(j)){
+          break;
+        }
+        else{
+          notfnd ++;
+        }
+      }
+      if(notfnd == s1.length()){
+        uniq = uniq + s2.charAt(i);
+        //notfnd = 0;
+      }
+    }
+    //System.out.println(uniq);
+    for(int i = 0; i<uniq.length(); i++){
+      System.out.print((char)((int)uniq.charAt(i)-32));
+    }
+  } 
+}
+//task8
+import java.util.Scanner;
+
+public class AlternatingCaps {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String sentence = sc.nextLine();
+        StringBuilder result = new StringBuilder();
+
+        boolean lower = true;  // To track whether to use lowercase or uppercase
+        for (int i = 0; i < sentence.length(); i++) {
+            char ch = sentence.charAt(i);
+            if (Character.isLetter(ch)) {
+                if (lower) {
+                    result.append(Character.toLowerCase(ch));
+                } else {
+                    result.append(Character.toUpperCase(ch));
+                }
+                lower = !lower;  // Alternate between lower and upper case
+            } else {
+                result.append(ch);  // For spaces or punctuation
+            }
+        }
+        System.out.println(result);
+    }
+}
+//task9
+import java.util.Scanner;
+
+public class StrongPasswordChecker {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String password = sc.nextLine();
+        System.out.println(isStrongPassword(password));
+    }
+
+    public static boolean isStrongPassword(String password) {
+        if (password.length() < 8) {
+            return false;
+        }
+
+        boolean hasUpper = false;
+        boolean hasLower = false;
+        boolean hasDigit = false;
+        boolean hasSpecial = false;
+
+        for (int i = 0; i < password.length(); i++) {
+            char ch = password.charAt(i);
+
+            if (Character.isUpperCase(ch)) {
+                hasUpper = true;
+            } else if (Character.isLowerCase(ch)) {
+                hasLower = true;
+            } else if (Character.isDigit(ch)) {
+                hasDigit = true;
+            } else if (!Character.isLetterOrDigit(ch)) {
+                hasSpecial = true;  // Special character
+            }
+        }
+
+        return hasUpper && hasLower && hasDigit && hasSpecial;
+    }
+}
+

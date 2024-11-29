@@ -1,0 +1,16 @@
+// Task 10
+
+import java.util.Scanner;
+public class task10{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter an Integer: ");
+    int n = sc.nextInt();
+    // int count = 0;
+    while(n>0){
+      n/=10;
+      System.out.print(n + ", ");
+      
+    }
+  }
+}

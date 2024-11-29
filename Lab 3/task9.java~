@@ -1,0 +1,28 @@
+// Task 9
+import java.util.Scanner;
+public class task9{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int pay = sc.nextInt();
+    int age = sc.nextInt();
+//    int dig = (x/100000);
+//    int year = dig/10;
+//    int session = dig % 10;
+    if(age<18){
+      System.out.println("Your Tax amounts in 0 Tk");
+    }
+    else{
+      if(pay<10000){
+        System.out.println("Your Tax amounts in 0 Tk");
+      }
+      else if(pay>=10000 && pay<=20000){
+        int tax = (pay * (5/100));
+        System.out.println("Your Tax amounts in "+ tax + "Tk");
+      }
+      else{
+        int tax = (pay*(10/100));
+        System.out.println("Your Tax amounts in "+ tax + "Tk");
+      }
+    }
+  }
+}

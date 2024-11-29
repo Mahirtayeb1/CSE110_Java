@@ -1,0 +1,11 @@
+// task 12
+public class task12{
+  public static void main (String[] args){
+   
+    int id = 24341086;
+    int lsttwo = (id % 100000);
+    
+    System.out.println("Sin value of Angle A is " + lsttwo);
+    
+  }
+}

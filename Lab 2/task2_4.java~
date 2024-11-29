@@ -1,0 +1,14 @@
+//task 2.2
+public class task2{
+  public static void main (String[] args){
+    double n = 10.57608;
+    double m = 4.321;
+    double result = (n + m);
+    double product = (n * m);
+    double division = (n/m);
+    System.out.println(result);
+    System.out.println(product);
+    System.out.println(division);
+    
+  }
+}

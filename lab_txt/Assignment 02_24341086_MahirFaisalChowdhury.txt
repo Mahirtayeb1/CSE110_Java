@@ -1,0 +1,315 @@
+// task 1
+
+a) hungry is a legal identifier.	 
+b) 2AB	is not a legal identifier.Identifieres cannot start with a digit.
+c) 312.2 is not a legal identifier. Identifieres cannot contain	a period (.).
+d) MOBILE is a legal identifier.	 
+e) “Ans” is not a legal identifier. Identifiers cannot contain double quotes "".
+f) $30 is a legal identifier.
+g) Yes/No is not a legal identifier. Identifiers cannot contain a slash (/). slashes are not valid as an identifier.	 
+h) student-id is not a legal identifier. Identifiers cannot contain a hyphen (-). Hyphens are not valid as an identifier. 	     
+i) A+3 is not a legal identifier. Identifiers cannot contain a plus sign (+). Plus signs are not valid as an identifier.	 
+j) ‘X’ is not a legal identifier. Identifiers cannot contain single quotes ''.	
+k) return is not a legal identifier. (return) is a keyword in java and that is why it can not be an identifier.
+
+
+// task 2
+
+
+//task 2.1
+public class task2_1{
+  public static void main (String[] args){
+    int n = 10;
+    System.out.println(n);
+   
+    
+  }
+}
+
+//task 2.2
+public class task2_2{
+  public static void main (String[] args){
+    int n = 10;
+    int m = 4;
+    int result = (n + m);
+    System.out.println(result);
+    
+  }
+}
+
+//task 2.3
+public class task2_3{
+  public static void main (String[] args){
+    int n = 10;
+    int m = 4;
+    int product = (n * m);
+    int division = (n/m);
+    System.out.println(product);
+    System.out.println(division);
+    
+  }
+}
+//task 2.4
+public class task2_4{
+  public static void main (String[] args){
+    double n = 10.57;
+    double m = 4.32;
+    double result = (n + m);
+    double product = (n * m);
+    double division = (n/m);
+    System.out.println(result);
+    System.out.println(product);
+    System.out.println(division);
+    
+  }
+}
+
+//task 2.5
+public class task2_5{
+  public static void main (String[] args){
+    int n = 10;
+    double m = 4.32;
+    double result = (n + m);
+    double product = (n * m);
+    double division = (n/m);
+    System.out.println(result);
+    System.out.println(product);
+    System.out.println(division);
+    
+  }
+}
+
+//task 2.6
+public class task2_6{
+  public static void main (String[] args){
+    String n = "10";
+    String m = "4";
+    String result = (n + m);
+    System.out.println(n);
+    System.out.println(result);
+    
+    
+    int g = 10;
+    String h = "4";
+    String sum = (g + h);
+    System.out.println(g);
+    System.out.println(sum);
+
+    
+    String i = "10";
+    int j = 4;
+    String Result = (i + j);
+    System.out.println(i);
+    System.out.println(Result);
+    
+    
+  }
+}
+
+// task 3
+
+public class task3{
+  public static void main (String[] args){
+    float pi = 3.1416f;
+    int r = 5;
+    float area = pi * r * r;
+    float circumf = 2 * pi * r;
+    System.out.println("Area of the Circle is " + area);
+    System.out.println("Circumference of the Circle is " + circumf);
+   
+    
+  }
+}
+
+// task 4
+
+public class task4{
+  public static void main (String[] args){
+    int n = 12345;
+    int digits = n%100;
+    System.out.println("last two digits are " + digits);
+       
+  }
+}
+
+// task 5
+
+public class task5{
+  public static void main (String[] args){
+    int n = 1000;
+    float meters = n * 0.0254f;
+    System.out.println(n + " inch is " + meters);
+       
+  }
+}
+
+// task 6
+
+public class task6{
+  public static void main (String[] args){
+    // by creating third variable
+    int n = 12;
+    int m = 6;
+    int temp = n;
+    n = m;
+    m = temp;
+    System.out.println(n);
+    System.out.println(m);
+    
+    // without creating other variable
+    int p = 10;
+    int q = 5;
+    p = p + q; // total 15
+    q = p - q; // total 10
+    p = p - q; // total 5
+    System.out.println(p);
+    System.out.println(q);
+       
+  }
+}
+// task 7
+
+public class task7{
+  public static void main (String[] args){
+   
+    int mins = 3456789;
+    int year = mins / (365 * 60 * 24);
+    //int d2 = (mins % (365 * 24 * 60)) / (24 * 60);
+    int day =  (mins - (year * (365 * 24 * 60))) / (24 * 60);
+    
+    System.out.println(mins + " minutes is approximately " + year + " years and " + day + " days" );
+    //System.out.println(day);
+    // System.out.println(d2);
+    
+  }
+}
+
+// task 8
+
+public class task8{
+  public static void main (String[] args){
+   
+    int a = 2;
+    int b = 5;
+    int c = 8;
+    int d = ((2*b) * ((c-a)/3)) + 7;
+    
+    System.out.println(d);
+    
+  }
+}
+
+// task 9
+
+public class task9{
+  public static void main (String[] args){
+   
+    int n = 5;
+    int r1 = n * 1;
+    int r2 = n * 2;
+    int r3 = n * 3;
+    int r4 = n * 4;
+    int r5 = n * 5;
+    int r6 = n * 6;
+    int r7 = n * 7;
+    int r8 = n * 8;
+    int r9 = n * 9;
+    int r10 = n * 10;
+    
+    
+    System.out.println(r1);
+    System.out.println(r2);
+    System.out.println(r3);
+    System.out.println(r4);
+    System.out.println(r5);
+    System.out.println(r6);
+    System.out.println(r7);
+    System.out.println(r8);
+    System.out.println(r9);
+    System.out.println(r10);
+  }
+}
+
+// task 10
+
+public class task10{
+  public static void main (String[] args){
+   
+    int n = 100;
+    int a = 1;
+    int L = 100;
+    int s = ((n/2)*(a+L));
+    
+    System.out.println("Sum of 1st 100 positive numbers is " + s);
+  }
+}
+
+// task 11
+
+public class task11{
+  public static void main (String[] args){
+   
+    double a = 4.5f;
+    double b = 9.5f;
+    double c = Math.sqrt((a*a) + (b*b));
+    double sinA = (a/c);
+    double cosA = (b/c);
+    double sinB = (b/c);
+    double cosB = (a/c);
+    
+    System.out.println("Sin value of Angle A is " + sinA);
+    System.out.println("Cos value of Angle A is " + cosA);
+    System.out.println("Sin value of Angle B is " + sinB);
+    System.out.println("Cos value of Angle B is " + cosB);
+  }
+}
+
+// task 12
+
+public class task12{
+  public static void main (String[] args){
+   
+    int id = 24341086;
+    int lsttwo = (id % 100);
+    int prevdigt = (lsttwo / 10);
+    int lstdigt = lsttwo % 10;
+    
+    System.out.println(lstdigt);
+    System.out.println(prevdigt);
+    
+  }
+}
+
+// task 13
+
+public class task13{
+  public static void main (String[] args){
+   
+    double dc = 2500.0;   // meter and 1 mile = 1609 meters
+    double t = (5*3600 + 56 * 60 + 23); // total time in s
+    double km = (dc / 1000.0);
+    double mile = (dc / 1609.0);
+    double k = km / (t /3600.0);
+    double m = mile / (t / 3600.0);
+    System.out.println("Your velocity in km/h is " + k);
+    System.out.println("Your velocity in miles/h is " + m);
+    
+  }
+}
+
+// task 14
+
+public class task14{
+  public static void main (String[] args){
+    double a = 8;
+    double b = 3;
+    double c = Math.sqrt(((a/2)*(a/2)) + (b*b));
+    double area = ((3 * Math.sqrt(3) * (c * c)) / 2);
+    double circumf = 6 * c;
+   
+
+    System.out.println("Area of the hexagon: " + area);
+    System.out.println("Circumference of the hexagon: " + circumf);
+    
+  }
+}

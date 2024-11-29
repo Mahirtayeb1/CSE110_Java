@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class midQ{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    int inp = sc.nextInt();
+    int max = 0;
+    for(int i = 0; i<inp; i++){
+      int prod = sc.nextInt();
+      if(inp > max){
+        max = inp;
+      }
+    }
+    System.out.print(max);
+  }
+}

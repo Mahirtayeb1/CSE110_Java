@@ -1,0 +1,13 @@
+//task 3
+public class task3{
+  public static void main (String[] args){
+    float pi = 3.1416f;
+    int r = 2;
+    float area = pi * r * r;
+    float circums = 2 * pi * r;
+    System.out.println(area);
+    System.out.println(circums);
+   
+    
+  }
+}

@@ -1,0 +1,13 @@
+//task 7
+public class task7{
+  public static void main (String[] args){
+    // by creating third variable
+    int mins = 3456789;
+    int year = mins / 365;
+    int day = mins % 365;
+    
+    System.out.println(year);
+    System.out.println(day);
+    
+  }
+}

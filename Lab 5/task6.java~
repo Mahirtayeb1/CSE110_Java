@@ -1,0 +1,16 @@
+// task 6
+import java.util.Scanner;
+public class task6{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    String space = " ";
+    for(int line = 1; line<=n; line++){
+      for(int row = 1; row<=n; row++){
+        System.out.print((n-line)* space);
+        System.out.print(line);
+      }
+      System.out.println(" ");
+    }
+  }
+}
